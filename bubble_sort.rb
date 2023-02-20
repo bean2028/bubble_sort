@@ -1,6 +1,6 @@
 require 'pry-byebug'
 
-number_list = [4,3,78,2]
+number_list = [4,3,78,2,0,100,23,6,25]
 
 def bubble_sort(array)
   size = array.length
@@ -13,8 +13,9 @@ def bubble_sort(array)
         swapped = true
       end
     end
+    size = size - 1
   end
-  puts array
+  p array
 end
 
 bubble_sort(number_list)
